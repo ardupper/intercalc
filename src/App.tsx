@@ -84,7 +84,7 @@ function App() {
         <InlineMath tex="\alpha" />
       </p>
       <CalcContainer>
-        <PowerDeclineCalculator className="p-4" />
+        <AlliesCalculator className="p-4" />
       </CalcContainer>
       <Accordion type="single" collapsible>
         <AccordionItem value="nuclear-weapons">
