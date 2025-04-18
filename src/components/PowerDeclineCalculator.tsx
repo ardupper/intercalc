@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { CalcSlider } from "./CalcSlider";
 import { InlineMath } from "./InlineMath";
 import { BargainingRange } from "./BargainingRange";
+import { sliderUpdate } from "@/lib/utils";
 
 interface PowerDeclineCalculatorProps {
   className?: string;
@@ -23,17 +24,9 @@ export function PowerDeclineCalculator({
     setX1((p * r) / (1 - delta));
   }, [r, p, q, delta, totalValue]);
 
-  const updateR = (value: number[]) => {
-    setR(value[0]);
-  };
-
-  const updateP = (value: number[]) => {
-    setP(value[0]);
-  };
-
-  const updateQ = (value: number[]) => {
-    setQ(value[0]);
-  };
+  const updateR = sliderUpdate(setR);
+  const updateP = sliderUpdate(setP);
+  const updateQ = sliderUpdate(setQ);
 
   const updateDelta = (value: number[]) => {
     setDelta(value[0]);
