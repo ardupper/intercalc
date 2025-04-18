@@ -68,16 +68,6 @@ function App() {
         <PowerDeclineCalculator className="p-4" />
       </CalcContainer>
       <Accordion type="single" collapsible>
-        <AccordionItem value="power-decline">
-          <AccordionTrigger className="text-white font-bold font-rethink text-2xl">
-            Power Decline/Commitment Problems
-          </AccordionTrigger>
-          <AccordionContent>
-            <CalcContainer>
-              <PowerDeclineCalculator className="p-4" />
-            </CalcContainer>
-          </AccordionContent>
-        </AccordionItem>
         <AccordionItem value="allies">
           <AccordionTrigger className="text-white font-bold font-rethink text-2xl">
             Allies
