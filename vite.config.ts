@@ -12,6 +12,6 @@ export default defineConfig({
     },
   },
   build: {
-    target: "docs",
+    outDir: "./docs",
   },
 });
