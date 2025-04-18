@@ -34,7 +34,7 @@ export function BargainCalculator({ className }: BargainCalculator) {
       />
       <CalcSlider
         tex="p"
-        desc="Probability State 1 Wins the War"
+        desc="Probability State 1 wins the war"
         value={p}
         onValueChange={updateP}
         colorStyle="bg-blue-400"
