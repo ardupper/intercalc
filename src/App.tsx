@@ -67,7 +67,7 @@ function App() {
       <CalcContainer>
         <PowerDeclineCalculator className="p-4" />
       </CalcContainer>
-      <h2 className="text-3xl font-bold text-white font-rethink pb-2">
+      <h2 className="text-3xl font-bold text-white font-rethink py-2">
         Other Bargains
       </h2>
       <p className="py-2 text-white font-rethink">
@@ -86,18 +86,18 @@ function App() {
       <CalcContainer>
         <AlliesCalculator className="p-4" />
       </CalcContainer>
-      <Accordion type="single" collapsible>
-        <AccordionItem value="nuclear-weapons">
-          <AccordionTrigger className="text-white font-bold font-rethink text-2xl">
-            Nuclear Weapons
-          </AccordionTrigger>
-          <AccordionContent>
-            <div className="border-2 border-white border-solid rounded-md">
-              <NuclearWeaponsCalculator className="p-4" />
-            </div>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+      <h3 className="text-2xl font-bold text-white font-rethink py-2">
+        Nuclear Weapons
+      </h3>
+      <p className="py-2 text-white font-rethink">
+        Despite the large number of states that could develop nuclear weapons,
+        we see very few actually do so. White this may be explained by the
+        Nuclear Non-Proliferation Treaty. The Bargaining Model also provides an
+        explanation.
+      </p>
+      <CalcContainer>
+        <NuclearWeaponsCalculator className="p-4" />
+      </CalcContainer>
     </div>
   );
 }
