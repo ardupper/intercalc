@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { CalcSlider } from "./CalcSlider";
 import { BargainingRange } from "./BargainingRange";
 import { InlineMath } from "./InlineMath";
+import { Slider } from "./ui/custom_slider";
 
 interface AlliesCalculatorProps {
   className: string;
@@ -60,15 +61,21 @@ export function AlliesCalculator({ className }: AlliesCalculatorProps) {
         max={1}
         step={0.01}
       />
-      <CalcSlider
-        tex="\alpha"
-        desc="Reduction in p if State 3 joins"
-        value={a}
-        max={1}
-        step={0.01}
-        onValueChange={updateA}
-        colorStyle="bg-pink-400"
-      />
+      <div className="py-4">
+        <div className="py-2">
+          <InlineMath tex={`\\alpha=${a.toFixed(2)}`} />
+          <span className="p-2 text-white font-rethink">
+            Reduction in <InlineMath tex="p" /> if State 3 joins
+          </span>
+        </div>
+        <Slider
+          rangeClassName="bg-pink-400"
+          onValueChange={updateA}
+          value={[a]}
+          max={1}
+          step={0.01}
+        />
+      </div>
       <CalcSlider
         tex="q"
         desc="Probability State 3 joins"
