@@ -68,7 +68,7 @@ export function ImperfectInformationCalculator({
         State 2's Expected Utility of War
       </span>
       <br />
-      <InlineMath tex={`100 - x_1 - x_2 = ${bargainingRange.toFixed(2)}`} />
+      <InlineMath tex={`T - x_1 - x_2 = ${bargainingRange.toFixed(2)}`} />
       {bargainingRange >= 0 ? (
         <span className="px-3 text-blue-400 font-rethink font-bold text-xl">
           Peace

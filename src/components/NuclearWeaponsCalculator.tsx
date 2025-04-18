@@ -51,6 +51,7 @@ export function NuclearWeaponsCalculator({
 
   return (
     <div className={className}>
+      <InlineMath tex="T=100" />
       <CalcSlider
         tex="R"
         desc="Value remaining after war"
@@ -100,7 +101,7 @@ export function NuclearWeaponsCalculator({
       <br />
       <InlineMath tex={`pR+T-R-\\delta(p-q)R=${x1.toFixed(2)}`} />
       <br />
-      <InlineMath tex={`100-x1-x2=${(100 - x1 - x2).toFixed(2)}`} />
+      <InlineMath tex={`T+k-x1-x2=${(100 + k - x1 - x2).toFixed(2)}`} />
       {100 + k - x1 - x2 >= 0 ? (
         <span className="text-blue-400 font-rethink px-2 text-xl">Peace</span>
       ) : (
