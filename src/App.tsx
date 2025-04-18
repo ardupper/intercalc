@@ -67,17 +67,26 @@ function App() {
       <CalcContainer>
         <PowerDeclineCalculator className="p-4" />
       </CalcContainer>
+      <h2 className="text-3xl font-bold text-white font-rethink pb-2">
+        Other Bargains
+      </h2>
+      <p className="py-2 text-white font-rethink">
+        Not all modifications to the Bargaining Model result in war. Several
+        other international interactions can be modeled by bargaining and always
+        result in an amicable bargaining range.
+      </p>
+      <h3 className="text-2xl font-bold text-white font-rethink py-2">
+        Allies
+      </h3>
+      <p className="py-2 text-white font-rethink">
+        When State 2 has an ally, State 3, with <InlineMath tex="q" /> chance of
+        joining the war and reducing <InlineMath tex="p" /> by{" "}
+        <InlineMath tex="\alpha" />
+      </p>
+      <CalcContainer>
+        <PowerDeclineCalculator className="p-4" />
+      </CalcContainer>
       <Accordion type="single" collapsible>
-        <AccordionItem value="allies">
-          <AccordionTrigger className="text-white font-bold font-rethink text-2xl">
-            Allies
-          </AccordionTrigger>
-          <AccordionContent>
-            <CalcContainer>
-              <AlliesCalculator className="p-4" />
-            </CalcContainer>
-          </AccordionContent>
-        </AccordionItem>
         <AccordionItem value="nuclear-weapons">
           <AccordionTrigger className="text-white font-bold font-rethink text-2xl">
             Nuclear Weapons
