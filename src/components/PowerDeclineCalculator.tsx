@@ -55,7 +55,7 @@ export function PowerDeclineCalculator({
       />
       <CalcSlider
         tex="p"
-        desc="Probability State 1 Wins War in Period 1"
+        desc="Probability State 1 wins war in Period 1"
         colorStyle="bg-blue-400"
         value={p}
         onValueChange={updateP}
@@ -85,14 +85,14 @@ export function PowerDeclineCalculator({
         x2={(x2 * 100) / totalValue}
       />
       <InlineMath tex={`\\frac{pR}{1-\\delta}=${x1.toFixed(2)}`} />
-      <span className="text-white font-rethink px-2">
+      <span className="text-white font-rethink px-16.5">
         State 1's Net Present Value of War
       </span>
       <br />
       <InlineMath
         tex={`\\frac{R}{1-\\delta} - \\frac{pR}{1-q\\delta}=${x2.toFixed(2)}`}
       />
-      <span className="text-white font-rethink px-2">
+      <span className="text-white font-rethink px-3">
         State 2's Net Present Value of War
       </span>
       <br />
