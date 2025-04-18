@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { BargainingRange } from "./BargainingRange";
-import { ProbabilitySlider, Actor } from "./ProbabilitySlider";
 import { InlineMath } from "./InlineMath";
 import { sliderUpdate } from "@/lib/utils";
 import { CalcSlider } from "./CalcSlider";
