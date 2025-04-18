@@ -5,12 +5,6 @@ import { ImperfectInformationCalculator } from "./components/ImperfectInformatio
 import { InlineMath } from "./components/InlineMath";
 import { NuclearWeaponsCalculator } from "./components/NuclearWeaponsCalculator";
 import { PowerDeclineCalculator } from "./components/PowerDeclineCalculator";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "./components/ui/accordion";
 
 function App() {
   return (
@@ -94,6 +88,13 @@ function App() {
         we see very few actually do so. White this may be explained by the
         Nuclear Non-Proliferation Treaty. The Bargaining Model also provides an
         explanation.
+      </p>
+      <p className="py-2 text-white font-rethink">
+        Suppose State 2 could spend <InlineMath tex="k" /> to develop a nuclear
+        weapon, and doing so would reduce State 1's chance of victory from{" "}
+        <InlineMath tex="p" /> to <InlineMath tex="q" />, such that{" "}
+        <InlineMath tex="q\ll p" />. State 1 can offer State 2 deals to{" "}
+        <em>not</em> develop a nuclear weapon.
       </p>
       <CalcContainer>
         <NuclearWeaponsCalculator className="p-4" />
