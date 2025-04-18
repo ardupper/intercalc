@@ -3,6 +3,7 @@ import { CalcSlider } from "./CalcSlider";
 import { BargainingRange } from "./BargainingRange";
 import { InlineMath } from "./InlineMath";
 import { Slider } from "./ui/custom_slider";
+import { sliderUpdate } from "@/lib/utils";
 
 interface AlliesCalculatorProps {
   className: string;
@@ -21,9 +22,7 @@ export function AlliesCalculator({ className }: AlliesCalculatorProps) {
     setX2(r - p * r + a * q * r);
   }, [r, p, a, q]);
 
-  const updateR = (value: number[]) => {
-    setR(value[0]);
-  };
+  const updateR = sliderUpdate(setR);
 
   const updateP = (value: number[]) => {
     setP(value[0]);
@@ -39,9 +38,7 @@ export function AlliesCalculator({ className }: AlliesCalculatorProps) {
     }
   };
 
-  const updateQ = (value: number[]) => {
-    setQ(value[0]);
-  };
+  const updateQ = sliderUpdate(setQ);
 
   return (
     <div className={className}>
