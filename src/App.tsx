@@ -16,33 +16,35 @@ function App() {
         The Bargaining Model
       </h2>
       <p className="text-white font-rethink py-2">
-        The Bargaining Model supposes that states come in to conflict of value{" "}
-        <InlineMath tex="T" />. Because war imposes some cost{" "}
-        <InlineMath tex="C" />, states stand to win the remainder{" "}
-        <InlineMath tex="T-C=R" />.
+        The Bargaining Model analyzes a dispute over a divisible good of total
+        value <InlineMath tex="T" />. If the states go to war, each pays a cost{" "}
+        <InlineMath tex="C" />, and states stand to win the remainder{" "}
+        <InlineMath tex="R=T-C" />.
       </p>
       <p className="text-white font-rethink py-2">
-        Hence, if State 1 has probability <InlineMath tex="p" /> to win the war
-        we can model all possible bargains with
+        If State 1's probability of winning is <InlineMath tex="p" />, its
+        expected payoff from war is <InlineMath tex="pR" />. Any peaceful
+        division that gives State 1 at least <InlineMath tex="pR" /> and State 2
+        at least <InlineMath tex="(1-p)R" /> lies within the "bargaining range"
+        and should prevent war.
       </p>
       <CalcContainer>
         <BargainCalculator className="p-4" />
       </CalcContainer>
       <p className="text-white font-rethink py-2">
-        We can see the Bargaining Model requires an acceptable bargaining range
-        for all conflicts.
-      </p>
-      <p className="text-white font-rethink py-2">
-        The primary sources of war the the two "Bargaining Failures" of
-        Incomplete Information and Power Decline/Commitment Problems
+        Wars occur when the bargaining range collapses. The primary sources of
+        this are <em>Incomplete Information</em> and{" "}
+        <em>Power Decline/Commitment Problems</em>
       </p>
       <h3 className="text-2xl font-bold text-white font-rethink pb-2">
         Incomplete Information
       </h3>
       <p className="py-2 text-white font-rethink">
-        With incomplete information, States will disagree over their respective
-        probabilities to win the war. If their perceptions are far enough
-        appart, or the cost of war is low enough, this can lead to war.
+        With incomplete information, states will disagree over their respective
+        probabilities of winning. If their perceptions are far enough apart, or
+        the cost of war is low enough, no deal satisfies both states, and war
+        becomes rational. The Imperfect <em>Information Calculator</em> shows
+        how belief discrepancies can eliminate the bargaining range.
       </p>
       <CalcContainer>
         <ImperfectInformationCalculator className="p-4" />
@@ -51,12 +53,11 @@ function App() {
         Power Decline/Commitment Problems
       </h3>
       <p className="py-2 text-white font-rethink">
-        When one state is declining relative to another, it can create
-        situations where State 1, the declining power, can get more from a war
-        immediately than the net present value of peaceful bargains into the
-        future. This occurs because State 2 can not make any commitment, as part
-        of their bargain, not to demand further concessions from State 1 in the
-        future.
+        When one state is declining relative to another, the rising power cannot
+        credibly commit to limit future demands. The declining power may choose
+        to fight now, rather than accept weaker peace later. The{" "}
+        <em>Power Decline/Commitment Problems</em> calculator demonstrates how
+        this dynamic can eliminate the bargaining range.
       </p>
       <CalcContainer>
         <PowerDeclineCalculator className="p-4" />
@@ -65,17 +66,17 @@ function App() {
         Other Bargains
       </h2>
       <p className="py-2 text-white font-rethink">
-        Not all modifications to the Bargaining Model result in war. Several
-        other international interactions can be modeled by bargaining and always
-        result in an amicable bargaining range.
+        Not all modifications to the Bargaining Model result in war. Many result
+        in a stable bargaining range.
       </p>
       <h3 className="text-2xl font-bold text-white font-rethink py-2">
         Allies
       </h3>
       <p className="py-2 text-white font-rethink">
-        When State 2 has an ally, State 3, with <InlineMath tex="q" /> chance of
+        Suppose 2 has an ally, State 3, with <InlineMath tex="q" /> chance of
         joining the war and reducing <InlineMath tex="p" /> by{" "}
-        <InlineMath tex="\alpha" />
+        <InlineMath tex="\alpha" />. Even with this additional uncertainty, a
+        bargaining range will persist.
       </p>
       <CalcContainer>
         <AlliesCalculator className="p-4" />
@@ -85,16 +86,15 @@ function App() {
       </h3>
       <p className="py-2 text-white font-rethink">
         Despite the large number of states that could develop nuclear weapons,
-        we see very few actually do so. White this may be explained by the
-        Nuclear Non-Proliferation Treaty. The Bargaining Model also provides an
-        explanation.
+        we see very few actually do so. While this may be explained by treaties,
+        the Bargaining Model also provides an explanation:
       </p>
       <p className="py-2 text-white font-rethink">
         Suppose State 2 could spend <InlineMath tex="k" /> to develop a nuclear
         weapon, and doing so would reduce State 1's chance of victory from{" "}
         <InlineMath tex="p" /> to <InlineMath tex="q" />, such that{" "}
-        <InlineMath tex="q\ll p" />. State 1 can offer State 2 deals to{" "}
-        <em>not</em> develop a nuclear weapon.
+        <InlineMath tex="q\ll p" />. A stable bargaining range exists, not only
+        to prevent war, but to prevent State 2 from developing a nuclear weapon.
       </p>
       <CalcContainer>
         <NuclearWeaponsCalculator className="p-4" />
