@@ -1,6 +1,6 @@
 # InterCalc
 
-The content of this software is largely based of Michael Gilligan's International Politics POL-UA 700 course at New York University.
+The content of this software is largely based of Professor Michael Gilligan's International Politics POL-UA 700 course at New York University.
 
 ## Contributions
 
